@@ -1,0 +1,45 @@
+const { register } = w96.app;
+const { Theme } = w96.ui;
+
+
+
+
+
+
+class XmasTrees extends WApplication {
+    constructor() {
+        super();
+    }
+    
+    async main(argv) {
+        super.main(argv);
+        
+        const mainwnd = this.createWindow({
+            title: "Animated Christmas Trees",
+            icon: Theme.getIconUrl("exec", "small"),
+            initialHeight: 150,
+            initialWidth: 300,
+            resizable: false,
+            
+            body: "<center><h1>Press Ctrl+Click to make trees!</h1><p>Note: This program keeps running even after this dialog is closed. Restart Windows 96 to end the program.</p>",
+            bodyClass: "anim-xmas-trees",
+            center: true,
+            taskbar: true
+        },
+        w96.WRT.runFile('C:/user/desktop/animtreelauncher.js'),
+         true); // true specifies that this is an app window (main window)
+        
+        mainwnd.show();
+    }
+}
+
+register({
+    command: "xmastree",
+    type: "gui",
+    cls: XmasTrees,
+    meta: {
+        icon: Theme.getIconUrl("exec"),
+        friendlyName: "Animated Desktop Christmas Trees"
+    }
+});
+
