@@ -1,0 +1,19 @@
+[
+    {
+        "name": "animated-xmas-trees",
+        "friendlyName": "Animated Christmas Trees for Desktop",
+        "description": "Animated, draggable Christmas trees for your desktop. Inspired by http://get-xmas.com .",
+        "author": "Plopilpy (https://github.com/plopilpy)",
+        "category": "entertainment",
+        "version": 1.0,
+        "feature_requirements": [],
+        "min_os_version": 2.2776,
+        "max_os_version": 9999,
+        "depends": [],
+        "iconFiles": {
+            "32x32": "$REPO_PATH$/dist/a/animated-xmas-tree/icon32.png",
+            "16x16": "$REPO_PATH$/dist/a/animated-xmas-tree/icon16.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/a/animated-xmas-tree/"
+    }
+]
