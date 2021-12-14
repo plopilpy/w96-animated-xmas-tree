@@ -1,1 +1,0 @@
-w96.ui.DialogCreator.alert("Happy Holidays 2021 ! Thank you for installing my package.\n I hope you enjoy it, as it took quite some effort.\n \n -Plopilpy :)")
